@@ -14,4 +14,59 @@
   --main-font: "Roboto", "Arial", "Helvetica", sans-serif;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--title-color);
+  font-family: var(--main-font);
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+p {
+  margin: 0;
+}
 /*# sourceMappingURL=main.css.map */

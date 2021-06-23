@@ -17,23 +17,23 @@
 } */
 
 /* Глобальные стили */
-body {
+/* body {
   background-color: var(--white-color);
   color: var(--title-color);
   font-family: var(--main-font);
   font-style: normal;
-  /* margin-top: 81px; */
-}
+
+} */
 
 /* Применится ко всем ссылкам на странице */
-a {
+/* a {
   text-decoration: none;
   color: inherit;
   display: block;
-}
+} */
 
 /* Убрали маркеры у списка */
-.list {
+/* .list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -52,9 +52,9 @@ ul,
 ol,
 p {
   margin: 0;
-}
+} */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -63,7 +63,7 @@ p {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-}
+} */
 
 /* Анимация */
 
@@ -836,11 +836,7 @@ p {
   margin-bottom: 30px;
 }
 
-.checkbox {
-  /* --webkit-appearance: none;
-  --moz-appearance: none;
-  appearance: none;
-  position: absolute; */
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -849,7 +845,7 @@ p {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 .checkbox:checked + .checkbox-icon {
   border-color: transparent;
