@@ -1,0 +1,34 @@
+/* Чем мы занимаемся */
+
+.section.our-work {
+  padding-top: 0;
+}
+
+.our-work-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-work-item {
+  position: relative;
+  z-index: -1;
+}
+
+.title-bg-work {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-top: 27px;
+}
+
+.bg-our-work {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}

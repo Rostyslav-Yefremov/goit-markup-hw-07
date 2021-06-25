@@ -12,13 +12,13 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
     <!-- Шапка и навигация-->
-    <header class="header fixed">
+    <header class="header">
         <div class="header-container container">
             <nav class="nav-header">
                 <a href="./index.html" class="logo"> <span
@@ -37,7 +37,7 @@
                 <li class="contact-list-item"> <a
                         href="mailto:info@devstudio.com"
                         class="link-nav touch-transform">
-                        <svg class="icon" width="16" height="12">
+                        <svg class="icon-nav" width="16" height="12">
                             <use
                                 href="./images/social.icons/sprite.svg#icon-envelope">
                             </use>
@@ -46,7 +46,7 @@
                     </a></li>
                 <li class="contact-list-item"> <a href="tel:+380961111111"
                         class="link-nav touch-transform" touch-transform> <svg
-                            class="icon" width="10" height="16">
+                            class="icon-nav" width="10" height="16">
                             <use
                                 href="./images/social.icons/sprite.svg#icon-smartphone">
                             </use>
@@ -176,7 +176,7 @@
         <!-- Секция чем мы занимаемся -->
         <section class="section our-work">
             <div class="container our-work-box">
-                <h2 class="title-section">Чем мы занимаемся</h2>
+                <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="list our-work-list">
                     <li class="our-work-item"> <img
                             src="./images/index/1img.jpg" width="370"
@@ -210,7 +210,7 @@
         <!-- Секция наша команда -->
         <section class="section our-team">
             <div class="container">
-                <h2 class="title-section">Наша команда</h2>
+                <h2 class="title">Наша команда</h2>
                 <ul class="our-team-list list">
                     <li class="team-item"> <img src="./images/index/foto1.jpg"
                             width="270" alt="фотография мужчины">
@@ -384,7 +384,7 @@
         <!-- Секция Постоянные клиенты -->
         <section class="section clients">
             <div class="container">
-                <h2 class="title-section">Постоянные клиенты</h2>
+                <h2 class="title">Постоянные клиенты</h2>
                 <ul class="clients-list list">
                     <li class="clients-item"><a href="#"
                             class="clients-link touch-transform"><svg
@@ -436,46 +436,6 @@
             </div>
         </section>
 
-        <!-- <form action="#" class="contact-form">
-            <b class="title-modal-form">Оставьте свои данные, мы вам
-                перезвоним</b>
-            <div class="form-box">
-                <label for="user-name">Имя</label>
-                <input class="contact-form-input" name="user-name"
-                    id="user-name" type="text" placeholder="Имя*" minlength="3"
-                    required autofocus>
-
-            </div>
-            <div class="form-box">
-                <label for="user-phone">Телефон</label>
-                <input class="contact-form-input" name="user-phone"
-                    id="user-phone" type="tel" placeholder="Телефон*" required>
-
-            </div>
-            <div class="form-box">
-                <label for="user-email-modal">Почта</label>
-                <input class="contact-form-input" name="user-email"
-                    id="user-email-modal" type="email" placeholder="Почта*"
-                    required>
-
-            </div>
-            <div class="form-box">
-                <label>Комментарий</label>
-                <textarea name="comment" placeholder="Введите текст"
-                    rows="8"></textarea>
-            </div>
-            <div class="form-box">
-                <input type="checkbox" name="policy" id="policy" value="policy">
-                <label class="policy" for="policy">Соглашаюсь с рассылкой и
-                    принимаю
-                    <a class="link-policy" href="#">Условия
-                        договора</a></label>
-            </div>
-            <div class="box-btn-modal">
-                <button class="form-modal-btn touch-transform"
-                    type="submit">Отправить</button>
-            </div>
-        </form> -->
 
     </main>
     <!-- Подвал -->

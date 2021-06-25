@@ -1,0 +1,64 @@
+.invisible {
+  display: none;
+}
+
+.features-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.features-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+}
+
+/* Псевдо элементы - иконки */
+
+.features-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--portfolio-button-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/index/antenna.svg);
+  margin-bottom: 30px;
+}
+
+.icon-clock::before {
+  background-image: url(../images/index/clock.svg);
+  margin-bottom: 30px;
+}
+
+.icon-notebook::before {
+  background-image: url(../images/index/notebook.svg);
+  margin-bottom: 30px;
+}
+
+.icon-astro::before {
+  background-image: url(../images/index/astronaut.svg);
+  margin-bottom: 30px;
+}
+
+.title-list {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+
+.text-list {
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
