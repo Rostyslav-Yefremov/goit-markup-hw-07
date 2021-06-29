@@ -3,37 +3,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header-container,
-.nav-header {
+.header-container {
   display: flex;
   align-items: center;
-}
-
-.nav-list {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-  margin-left: 93px;
-  display: flex;
-}
-
-.nav-list-item:not(:last-child),
-.contact-list-item:not(:last-child) {
-  display: flex;
-  margin-right: 50px;
-}
-
-.contact-nav {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-
-  display: flex;
-  margin-left: auto;
 }

@@ -10,7 +10,7 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-button {
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -20,16 +20,16 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
-.modal-button-icon {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.modal-button:hover,
-.modal-button:focus {
-  fill: var(--accent-color);
 }

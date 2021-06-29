@@ -1,15 +1,15 @@
 // Иконки социальных сетей - Наша команда
 
-.social-icons {
+.social {
   display: flex;
   justify-content: center;
 }
 
-.social-icons-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icons-link {
+.social__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -17,36 +17,25 @@
   align-items: center;
   border-radius: 50%;
   fill: var(--social-icons);
-}
 
-.social-icons-link:hover,
-.social-icons-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+  }
 }
-
-.social-icons-smm {
+.social__icons {
   width: 20px;
   height: 20px;
 }
 
 // Иконки в футере
 
-.footer-box .text {
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-color);
-}
-
-.footer-box {
+.footer-social {
   margin-right: 93px;
 }
 
-.social-icons-link.footer-icons {
+.social__link.footer-icons {
   background-color: var(--theme-footer-icon);
   fill: var(--white-color);
 }
