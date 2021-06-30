@@ -5,10 +5,11 @@
   justify-content: center;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 10px;
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
-
 .social__link {
   width: 44px;
   height: 44px;
@@ -35,13 +36,13 @@
   margin-right: 93px;
 }
 
-.social__link.footer-icons {
+.social__link--footer-icons {
   background-color: var(--theme-footer-icon);
   fill: var(--white-color);
-}
 
-.footer-icons:hover,
-.footer-icons:focus {
-  background-color: var(--accent-color);
-  fill: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+  }
 }

@@ -129,7 +129,11 @@ p {
   margin-left: auto;
 }
 
-.nav__item:not(:last-child),
+.nav__item:not(:last-child) {
+  display: flex;
+  margin-right: 50px;
+}
+
 .contact__item:not(:last-child) {
   display: flex;
   margin-right: 50px;
@@ -146,17 +150,12 @@ p {
   color: var(--accent-color);
 }
 
-.nav__link.current {
+.nav__link--current {
   position: relative;
   color: var(--accent-color);
 }
 
-.nav__icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.current::after {
+.nav__link--current::after {
   position: absolute;
   display: block;
   content: "";
@@ -166,6 +165,11 @@ p {
   bottom: 0;
   border-radius: 2px;
   background-color: var(--accent-color);
+}
+
+.nav__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .hero-button {
@@ -300,6 +304,10 @@ p {
   outline: none;
 }
 
+.form__input:focus ~ .form__icon {
+  fill: var(--accent-color);
+}
+
 .form__icon {
   position: absolute;
   top: 50%;
@@ -331,10 +339,6 @@ p {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.form__input:focus ~ .form__icon {
-  fill: var(--accent-color);
 }
 
 .checkbox__policy {
@@ -511,13 +515,12 @@ p {
   margin-right: 93px;
 }
 
-.social__link.footer-icons {
+.social__link--footer-icons {
   background-color: var(--theme-footer-icon);
   fill: var(--white-color);
 }
 
-.footer-icons:hover,
-.footer-icons:focus {
+.social__link--footer-icons:hover, .social__link--footer-icons:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
@@ -579,27 +582,6 @@ p {
   margin-left: 30px;
 }
 
-.features__title {
-  font-family: var(--main-font);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-color);
-  margin-bottom: 10px;
-}
-
-.features__text {
-  font-family: var(--main-font);
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
-
-/* Псевдо элементы - иконки */
 .features__item::before {
   display: block;
   content: "";
@@ -627,6 +609,26 @@ p {
 .icon-astro::before {
   background-image: url(../images/index/astronaut.svg);
   margin-bottom: 30px;
+}
+
+.features__title {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+
+.features__text {
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
 
 /* Чем мы занимаемся */
@@ -778,9 +780,14 @@ p {
   color: var(--text-color);
 }
 
-.card-set__link:hover,
-.card-set__link:focus {
+.card-set__link:hover, .card-set__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-set__link:hover .overlay-portfolio__text,
+.card-set__link:focus .overlay-portfolio__text {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .overlay-portfolio {
@@ -805,12 +812,6 @@ p {
   letter-spacing: 0.03em;
   color: var(--white-color);
   padding: 24px;
-}
-
-.card-set__link:hover .overlay-portfolio__text,
-.card-set__link:focus .overlay-portfolio__text {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .footer {
