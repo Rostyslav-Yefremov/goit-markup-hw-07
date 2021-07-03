@@ -30,3 +30,42 @@
 
 1. Тулзы - гид
 2. Классы - допкассы, наследование
+
+- задать 320 в тулзах
+- Убираем флексы
+- Контейнеру задать 100 процентов ширину
+- 100% лишке и списку
+  @media screen and ( min-width: 480px)
+  max-width: 480px
+
+.container {
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+width: 100%;
+@media screen and (min-width: 480px) {
+max-width: 480px;
+}
+@media screen and (min-width: 768px) {
+max-width: 768px;
+}
+@media screen and (min-width: 1200px) {
+max-width: 1200px;
+}
+}
+
+(() => {
+const refs = {
+openMenuBtn: document.querySelector('.menu-open'),
+closeMenuBtn: document.querySelector('.menu-close'),
+menu: document.querySelector('.mobile-nav'),
+};
+
+refs.openMenuBtn.addEventListener('click', toggleMenu);
+refs.closeMenuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+refs.menu.classList.toggle('is-hidden');
+}
+})();
